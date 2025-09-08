@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Header from '../components/header';
 import Hero from '../components/hero';
 import BenefitsRow from '../components/benefits-row';
@@ -6,6 +5,12 @@ import ProductAbout from '../components/product-about';
 import Certificates from '../components/certificates';
 import PurchaseOffer from '../components/purchase-offer';
 
+import BenefitsGrid from '../components/benefits-grid';
+import Reviews from '../components/reviews';
+import OrderNow from '../components/order-now';
+import ProductHighlight from '../components/product-highlight';
+import Faq from '../components/faq';
+import Footer from '../components/footer';
 export default function Home() {
   return (
     <div className='relative overflow-hidden'>
@@ -30,6 +35,12 @@ export default function Home() {
         productImg='/images/harmony-bottle.jpg'
         modelImg='/images/hero-banner.png'
       />
+      <BenefitsGrid />
+      <Reviews />
+      <OrderNow />
+      <ProductHighlight image='/images/about-img.png' active={'Tabiiy yod'} />
+      <Faq />
+      <Footer />
     </div>
   );
 }
